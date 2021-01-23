@@ -26,16 +26,22 @@ public class TestItemList {
 	String testUrl = "http://localhost:3000";
 	WebDriverWait wait = null;
 
+	/*******************
+	 * Initial Chrome driver for Selenium before test
+	 */
 	@BeforeClass
 	public void setup() {
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 5);
 	}
 
+	/*******************
+	 * Close the Chrome and quit after all test done
+	 */
 	@AfterClass
 	public void teardown() {
-		// driver.close();
-		// driver.quit();
+		 driver.close();
+		 driver.quit();
 	}
 
 	/*******************
