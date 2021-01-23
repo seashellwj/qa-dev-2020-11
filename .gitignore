@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Java
+/automation-test/testQaExercise/test-output
+*.log
+*.class
+/automation-test/testQaExercise/bin
+/automation-test/testQaExercise/test-output
