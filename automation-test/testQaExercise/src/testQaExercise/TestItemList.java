@@ -45,11 +45,11 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 1: Test add item with letter title (between 10 and 20
+	 * Add Item Test Case 01: Test add item with letter title (between 10 and 20
 	 * characters)
 	 */
 	@Test
-	public void testAddItemTC1() {
+	public void testAddItemTC01() {
 
 		driver.get(testUrl);
 		addItem("abcdefghijk");
@@ -59,11 +59,11 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 2: Test add item with number title (between 10 and 20
+	 * Add Item Test Case 02: Test add item with number title (between 10 and 20
 	 * characters)
 	 */
 	@Test
-	public void testAddItemTC2() {
+	public void testAddItemTC02() {
 
 		driver.get(testUrl);
 		addItem("12345678901");
@@ -73,11 +73,11 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 3: Test add item with Special characters title (between 10
+	 * Add Item Test Case 03: Test add item with Special characters title (between 10
 	 * and 20 characters)
 	 */
 	@Test
-	public void testAddItemTC3() {
+	public void testAddItemTC03() {
 
 		driver.get(testUrl);
 		addItem("~!@#$%^&*()");
@@ -87,11 +87,11 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 4: Test add item with a title with space before it (letter
+	 * Add Item Test Case 04: Test add item with a title with space before it (letter
 	 * between 10 and 20 characters, total > 20 characters )
 	 */
 	@Test
-	public void testAddItemTC4() {
+	public void testAddItemTC04() {
 
 		driver.get(testUrl);
 		addItem("         abcdefghijklmno");
@@ -101,11 +101,11 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 5: Test add item with a title with space after it (letter
+	 * Add Item Test Case 05: Test add item with a title with space after it (letter
 	 * between 10 and 20 characters, total > 20 characters )
 	 */
 	@Test
-	public void testAddItemTC5() {
+	public void testAddItemTC05() {
 
 		driver.get(testUrl);
 		addItem("abcdefghijklmno         ");
@@ -115,10 +115,10 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 6: Test add item with a title (= 20 characters)
+	 * Add Item Test Case 06: Test add item with a title (= 20 characters)
 	 */
 	@Test
-	public void testAddItemTC6() {
+	public void testAddItemTC06() {
 
 		driver.get(testUrl);
 		addItem("abcdefghijklmnopqrst");
@@ -128,10 +128,10 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 7: Test add item with a title (> 20 characters)
+	 * Add Item Test Case 07: Test add item with a title (> 20 characters)
 	 */
 	@Test
-	public void testAddItemTC7() {
+	public void testAddItemTC07() {
 
 		driver.get(testUrl);
 		addItem("abcdefghijklmnopqrstu");
@@ -144,10 +144,10 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 8: Test add item with a title (= 10 characters)
+	 * Add Item Test Case 08: Test add item with a title (= 10 characters)
 	 */
 	@Test
-	public void testAddItemTC8() {
+	public void testAddItemTC08() {
 
 		driver.get(testUrl);
 		addItem("abcdefghij");
@@ -157,10 +157,10 @@ public class TestItemList {
 	}
 
 	/*******************
-	 * Add Item Test Case 9: Test add item with a title (< 10 characters)
+	 * Add Item Test Case 09: Test add item with a title (< 10 characters)
 	 */
 	@Test
-	public void testAddItemTC9() {
+	public void testAddItemTC09() {
 
 		driver.get(testUrl);
 		addItem("abcde");
